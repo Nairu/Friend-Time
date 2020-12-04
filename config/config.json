@@ -1,7 +1,7 @@
 {
-    "prefix": "-ft",
+    "prefix": "-ri",
     "client": {
-        "token": "<DISCORD_BOT_TOKEN>",
+        "token": "NzgxOTQ0MTc2ODc4OTQ0MzA3.X8FAQw.toW8ZgmmHthMIgKjBaCqb8d48x0",
         "intents": [
             "GUILDS",
             "GUILD_MEMBERS",
@@ -21,9 +21,9 @@
     },
     "mysql": {
         "host": "localhost",
-        "database": "<MYSQL_DATABASE_NAME>",
-        "user": "<MYSQL_USER>",
-        "password": "<MYSQL_PASSWORD>",
+        "database": "friend-time",
+        "user": "friendtime",
+        "password": "friendtime",
         "connectionLimit": 10
     },
     "rateLimiting": {

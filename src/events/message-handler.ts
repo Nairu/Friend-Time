@@ -61,7 +61,9 @@ export class MessageHandler implements EventHandler {
             return;
         }
 
-        Logger.info("Message:" + msg);
+	if (channel instanceof TextChannel && channel.name == "bot-test-channel") {
+	    Logger.info("Message:" + JSON.stringify(msg));
+	}
 
         let args = msg.content.split(' ');
         let startsWithPrefix = [
