@@ -41,7 +41,7 @@ export class MessageHandler implements EventHandler {
         private zoneService: ZoneService,
         private timeFormatService: TimeFormatService,
         private reminderService: ReminderService
-    ) {}
+    ) { }
 
     public async process(msg: Message): Promise<void> {
         // Check if the message is a partial
@@ -60,6 +60,8 @@ export class MessageHandler implements EventHandler {
         if (msg.author.bot) {
             return;
         }
+
+        Logger.info("Message:" + msg);
 
         let args = msg.content.split(' ');
         let startsWithPrefix = [
